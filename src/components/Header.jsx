@@ -4,10 +4,7 @@ import { ShieldCheck, Sparkles, BookOpen } from 'lucide-react';
 export default function Header() {
   return (
     <header className="header-container">
-      <div className="header-badge">
-        <BookOpen size={14} className="badge-icon" />
-        <span>Manual Contraseñas S3guR4$_ &middot; Hacker Mentor</span>
-      </div>
+
 
       <h1 className="header-title">
         Validador & Generador de <span className="header-accent">Contraseñas</span>

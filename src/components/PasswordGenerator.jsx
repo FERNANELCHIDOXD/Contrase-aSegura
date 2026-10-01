@@ -27,17 +27,12 @@ export default function PasswordGenerator({ onSelectForValidation }) {
     <section id="generador" className="section-card">
       <div className="section-header">
         <div className="section-title-wrap">
-          <div className="section-number-pill">Sección 01</div>
           <h2 className="section-title">
             <KeyRound className="section-title-icon" />
             Generador de Contraseñas a partir de una Palabra
           </h2>
         </div>
-        <p className="section-subtitle">
-          El manual de Hacker Mentor indica: <em>"Si quieres usar palabras comunes, mezcla y reemplaza
-          letras con mayúsculas, símbolos y números, o usa frases secretas memorables"</em>.
-          Ingresa una palabra y generaremos 3 opciones seguras de ejemplo.
-        </p>
+
       </div>
 
       <div className="generator-controls">

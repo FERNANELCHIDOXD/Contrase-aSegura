@@ -79,16 +79,11 @@ export default function PasswordValidator({ currentPassword, onPasswordChange })
       {/* Encabezado exterior minimalista */}
       <div className="section-header text-center">
         <div className="section-title-wrap justify-center">
-          <div className="section-number-pill section-number-azure">Sección 02</div>
           <h2 className="section-title">
-            <Laptop className="section-title-icon azure-icon" size={22} />
-            Estación de Trabajo: Validador de Contraseñas
+            Validador de Contraseñas
           </h2>
         </div>
-        <p className="section-subtitle">
-          Interactúa directamente con la computadora de seguridad para inspeccionar tu contraseña
-          en tiempo real contra los parámetros del manual.
-        </p>
+
       </div>
 
       {/* DISPOSITIVO: COMPUTADORA WORKSTATION */}
@@ -112,14 +107,7 @@ export default function PasswordValidator({ currentPassword, onPasswordChange })
                   <span className="traffic-dot dot-purple" title="Minimizar" />
                   <span className="traffic-dot dot-azure" title="Maximizar" />
                 </div>
-                <div className="screen-title">
-                  <Terminal size={13} className="title-terminal-icon" />
-                  <span>hacker-mentor://security-inspector.sh</span>
-                </div>
-                <div className="screen-status-badge">
-                  <span className="live-dot" />
-                  <span>Sistema Activo</span>
-                </div>
+
               </div>
 
               {/* Contenido principal dentro de la pantalla */}
@@ -144,6 +132,7 @@ export default function PasswordValidator({ currentPassword, onPasswordChange })
                       className="screen-password-input"
                       autoComplete="off"
                       spellCheck="false"
+                      maxLength={50}
                     />
 
                     <div className="terminal-input-actions">
@@ -168,23 +157,7 @@ export default function PasswordValidator({ currentPassword, onPasswordChange })
                     </div>
                   </div>
 
-                  {/* Botones de muestra rápida integrados en la pantalla */}
-                  <div className="screen-samples-row">
-                    <span className="screen-samples-label">Muestras del manual:</span>
-                    <div className="screen-samples-list">
-                      {MANUAL_SAMPLES.map((sample, idx) => (
-                        <button
-                          key={idx}
-                          type="button"
-                          className="screen-sample-chip"
-                          onClick={() => handleLoadSample(sample.password)}
-                          title={sample.desc}
-                        >
-                          {sample.name}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
+
                 </div>
 
                 {/* Métricas de Fuerza Bruta y Diagnóstico */}
